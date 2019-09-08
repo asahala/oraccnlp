@@ -29,7 +29,7 @@ In order to build the transcr-model, run `make models/oracc-transcr-parser`. The
 
 In order to run the transcr-parser on the dev data, run `make results/oracc-transcr-dev.conllu.sys`. The other parser is run similarly.
 
-## Evaluating parser
+## Evaluating parsers
 
 In the `src` directory, you can find the official CoNLL 2018 depedendency parsing shared task evaluation script. It is used in the following way and should output something like this:
 
