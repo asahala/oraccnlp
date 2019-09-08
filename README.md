@@ -38,7 +38,7 @@ In order to run the transcr-parser on the dev data, run `make results/oracc-tran
 In the `src` directory, you can find the official CoNLL 2018 depedendency parsing shared task evaluation script. It is used in the following way and should output something like this:
 
 ```
-$ $ python3 src/conll18_ud_eval.py -v data/oracc-transcr-dev.conllu results/oracc-transcr-dev.conllu.sys 
+$ python3 src/conll18_ud_eval.py -v data/oracc-transcr-dev.conllu results/oracc-transcr-dev.conllu.sys 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
