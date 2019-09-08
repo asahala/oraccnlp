@@ -31,6 +31,15 @@ models/oracc-%-parser:data/oracc-%-train.conllu data/oracc-%-dev.conllu
 	rm -Rf models/oracc-$*-parser
 	mv ${TURKU_PARSER}/models_oracc-$*-parser models/oracc-$*-parser
 
+results/oracc-%-dev.conllu.sys:data/oracc-%-dev.conllu models/oracc-%-parser
+	# See the training target for documentation.
+	cd ${TURKU_PARSER}; \
+	source venv-parser-neural/bin/activate; \
+	cat ${CURRDIR}/$< | bash ${CURRDIR}/src/clear_annotations.sh |\
+	python3 ${TURKU_PARSER}/full_pipeline_stream.py \
+                --conf ${CURRDIR}/models/oracc-$*-parser/pipelines.yaml \
+                parse_conllu > ${CURRDIR}/$@
+
 results/oracc-%-test.conllu.sys:data/oracc-%-test.conllu models/oracc-%-parser
 	# See the training target for documentation.
 	cd ${TURKU_PARSER}; \
