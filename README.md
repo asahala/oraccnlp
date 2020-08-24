@@ -61,3 +61,7 @@ BLEX       |     96.19 |     96.19 |     96.19 |     96.19
 ## N-Best lemmatization
 
 TBD
+
+## Statistical / heuristic model
+
+In the `stat` directory, you can find the statistical/heuristic model. No external libraries required.
