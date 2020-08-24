@@ -18,7 +18,7 @@ You need the [ORACC corpus](https://www.dropbox.com/s/txnl21dv8r7iuk2/ORACC.VRT.
 
 ## Building datasets
 
-Start by running `make all` in order to build the CoNLL-U training, development and test sets from `ORACC.VRT`. The data will contain all example sentences from standard babylonian dialect(?). The data will be divided randomly into 90% training, 10% development and 10% test data. Empty tokens and tokens which have not been transcribed will not be included.
+Start by running `make all` in order to build the CoNLL-U training, development and test sets from `ORACC.VRT`. The data will contain all example sentences from Standard Babylonian literary language. The data will be divided randomly into 90% training, 10% development and 10% test data. Empty tokens and tokens which have not been transcribed will not be included.
 
 ## Building parsers
 
