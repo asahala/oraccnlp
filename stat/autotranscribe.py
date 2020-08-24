@@ -11,13 +11,27 @@
 #    id-di-iš-šu
 #    [(1.0, 'iddiššū')]
 #
+#    E₂
+#    [(0.6227381358825538, 'bīt'), (0.29327415500170706, 'bīti'),
+#    (0.045749402526459544, 'bītu')]
 #    ip-ru-us
 #    [(1.0, 'iprus')]
 #
 #    id-da-ak
 #    [(0.8571428571428571, 'iddak'), (0.14285714285714285, 'iddâk')]
 #
+#    The model learns character to character mappings from the training
+#    data and converts them into abstract patterns that can be'
+#    generalized to transcribe other similar words. If it cannot
+#    produce generalizations (logograms or complex syllabic spellings)
+#    it will rely on dictionary lookup.
+#
+#    Achieves a maximum recall of 92% for syllabic spellings and
+#    about 61% for logograms on Standard Babylonian.
+#
 #    -- github/asahala
+
+
 
 import re
 import gzip
