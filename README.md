@@ -1,3 +1,8 @@
+## Paper
+
+Sahala, Silfverberg, Arppe & Linden (2020). Automated Phonological Transcription of Akkadian Cuneiform Text. LREC.
+http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.433.pdf
+
 ## Dependencies
 
 1. Install the [Turku Neural Parser Pipeline](https://turkunlp.org/Turku-neural-parser-pipeline/).
